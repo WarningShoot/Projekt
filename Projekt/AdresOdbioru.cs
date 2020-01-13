@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Projekt
 {
-    class AdresOdbioru
+    public class AdresOdbioru
     {
         public AdresOdbioru(int adresOdbioru_ID, string ulica, string numerDomu,
             string numerMieszkania, string kodPocztowy, string miasto)

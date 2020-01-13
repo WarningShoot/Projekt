@@ -4,15 +4,16 @@ using System.Text;
 
 namespace Projekt
 {
-    class Wynagrodzenie
+    public class Wynagrodzenie
     {
-        public Wynagrodzenie(int iD_Wynagrodznie, int kierowcy_ID,
+        public Wynagrodzenie(int iD_Wynagrodznie, Konto_Kierowcy kierowca, Firma firma,
             DateTime data,
             decimal wyplataBrutto, decimal wyplataNetto,
             decimal podatekDochodowy, decimal skladkaZUS)
         {
             ID_Wynagrodznie = iD_Wynagrodznie;
-            Kierowcy_ID = kierowcy_ID;
+            Kierowca = kierowca;
+            Firma = firma;
             Data = data;
             WyplataBrutto = wyplataBrutto;
             WyplataNetto = wyplataNetto;
@@ -21,7 +22,8 @@ namespace Projekt
         }
 
         public int ID_Wynagrodznie { get; }
-        public int Kierowcy_ID { get; set; }
+        public Konto_Kierowcy Kierowca { get; set; }
+        public Firma Firma { get; set; }
         public DateTime Data { get; set; }
         public decimal WyplataBrutto { get; set; } = .00M;
         public decimal WyplataNetto { get; set; } = .00M;

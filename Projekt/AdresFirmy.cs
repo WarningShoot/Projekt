@@ -4,12 +4,12 @@ using System.Text;
 
 namespace Projekt
 {
-    public class AdresKierowcy
+    public class AdresFirmy
     {
-        public AdresKierowcy(int iD_AdresKierwocy, string ulica, string numerDomu,
+        public AdresFirmy(int adresFirmy_ID, string ulica, string numerDomu,
             string numerMieszkania, string kodPocztowy, string miasto)
         {
-            ID_AdresKierwocy = iD_AdresKierwocy;
+            AdresFirmy_ID = adresFirmy_ID;
             Ulica = ulica;
             NumerDomu = numerDomu;
             NumerMieszkania = numerMieszkania;
@@ -17,7 +17,7 @@ namespace Projekt
             Miasto = miasto;
         }
 
-        public int ID_AdresKierwocy { get; }
+        public int AdresFirmy_ID { get; set; }
         public string Ulica { get; set; }
         public string NumerDomu { get; set; }
         public string NumerMieszkania { get; set; }
